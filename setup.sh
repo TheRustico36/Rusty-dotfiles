@@ -15,7 +15,9 @@ if [ "$option" = "1" ]; then
     printf "Proceed? (y/N): "
     read confirm
     if [ "$confirm" = "y" ]; then
-        cp -r .* "$HOME"
+        find . -mindepth 1 -maxdepth 1 ! -name '.git' ! -name 'README.md' | while read file; do
+  cp -r "$file" "$HOME"
+done
         mkdir -p "$HOME/Pictures"
         cp -r Wallpapers "$HOME/Pictures"
         echo "Done!"
