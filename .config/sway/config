@@ -1,0 +1,10 @@
+include ~/.config/sway/included/vars
+include ~/.config/sway/included/monitors
+include ~/.config/sway/included/keybindings
+include ~/.config/sway/included/workspaces
+include ~/.config/sway/included/rules
+include ~/.config/sway/included/looks
+
+xwayland enable
+include /etc/sway/config.d/*
+

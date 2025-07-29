@@ -1,0 +1,7 @@
+### Output configuration
+output * bg ~/Pictures/Wallpapers/great-wave-of-kanagawa-gruvbox.png fill
+
+# Monitors (uncomment and modify if needed)
+# output HDMI-A-1 mode 1920x1080@99.999Hz
+# output DP-3 mode 2560x1440@179.999Hz
+

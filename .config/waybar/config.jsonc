@@ -1,0 +1,29 @@
+{
+  "layer": "top",
+  "position": "top",
+  "modules-left": ["sway/workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["custom/alsa", "battery", "network"],
+
+  "clock": {
+    "format": "󰃰 {:%a %b %d  %H:%M}"
+  },
+
+  "custom/alsa": {
+    "format": "󰕾 {}%",
+    "interval": 5,
+    "exec": "amixer get Master | awk -F'[][]' '/%/ { print $2; exit }'"
+  },
+
+  "battery": {
+    "format": "{capacity}% {icon}",
+    "format-icons": ["󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
+  },
+
+  "network": {
+    "format-wifi": "󰖩 {essid} ({signalStrength}%)",
+    "format-ethernet": "󰈀 {ifname}",
+    "format-disconnected": "󰖪 Disconnected"
+  }
+}
+
