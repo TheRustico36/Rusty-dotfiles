@@ -9,7 +9,9 @@ gaps inner 9
 gaps outer 0
 
 # Colors
-client.focused #648F64 #648F64 #ffffff #D79921 #EBDBB2
+
+client.focused #648F64 #648F64 #ffffff #ECEFF4 #ffffff
+client.unfocused #648F64 #648F64 #ffffff #0C3552 #1E1E2E
 
 # Bar
 bar {
