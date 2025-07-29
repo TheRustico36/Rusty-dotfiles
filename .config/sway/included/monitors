@@ -1,5 +1,5 @@
 ### Output configuration
-output * bg ~/Pictures/Wallpapers/great-wave-of-kanagawa-gruvbox.png fill
+output * bg ~/Pictures/Wallpapers/fuji.png fill
 
 # Monitors (uncomment and modify if needed)
 # output HDMI-A-1 mode 1920x1080@99.999Hz
